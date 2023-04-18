@@ -1,4 +1,4 @@
-const slides = ['banner-1.jpg', 'home-2.jpg', 'home-4.jpg', 'home-6.jpg', 'home-5.jpg'];
+const slides = ['banner-1.jpg', 'home-2.jpg', 'home4.jpg', 'home-6.jpg', 'home-5.jpg'];
 let currentSlide = 0;
 const slideshow = document.querySelector('.banner-menu');
 
