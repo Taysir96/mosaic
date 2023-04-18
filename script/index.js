@@ -7,9 +7,8 @@ function showSlide(n) {
     slideshow.style.backgroundImage = `url(./images/${slides[currentSlide]})`;
 }
 
-showSlide(0); // Toon de eerste slide
+showSlide(0);
 
-// Automatisch overschakelen naar de volgende slide na 3 seconden
 setInterval(() => {
     showSlide(currentSlide + 1);
 }, 3000);
