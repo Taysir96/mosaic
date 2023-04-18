@@ -4,7 +4,7 @@ const slideshow = document.querySelector('.banner-menu');
 
 function showSlide(n) {
     currentSlide = (n + slides.length) % slides.length;
-    slideshow.style.backgroundImage = `url(../images/${slides[currentSlide]})`;
+    slideshow.style.backgroundImage = `url(./images/${slides[currentSlide]})`;
 }
 
 showSlide(0); // Toon de eerste slide
