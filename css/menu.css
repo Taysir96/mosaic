@@ -1,0 +1,113 @@
+@import url("./hamburgerMenu.css");
+@import url("./index.css");
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line span {
+    height: 5px;
+    width: 10%;
+    background-color: #EAE5D6;
+}
+
+.line div {
+    color: #EAE5D6;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.banner-menu {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 2s ease-in-out;
+    background-attachment: fixed;
+}
+
+
+.menu-content {
+    padding: 20px;
+}
+
+.slideshow img.active {
+    opacity: 1;
+}
+
+.menu-mosaic {
+    width: 100%;
+}
+
+.menu-mosaic section {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+
+.menu-mosaic section span {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+.menu-mosaic section span p {
+    font-weight: 400;
+    font-size: 1.3em;
+    text-shadow: 3px 3px 3px #9b8c67;
+}
+
+.menu-mosaic section span a {
+    background-color: #a29062;
+    color: #EAE5D6;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+
+.menu-mosaic section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.shadow {
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0px;
+}
+
+@media only screen and (min-width: 750px) {
+    .menu-content {
+        width: 60%;
+        margin: auto;
+    }
+
+    .menu-mosaic {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .menu-mosaic section {
+        width: 49%;
+        transition: 1.1s;
+    }
+
+    .menu-mosaic section:hover {
+        transform: scale(107%);
+        transition: 1.2s;
+    }
+}

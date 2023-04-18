@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,500;0,700;1,400&family=Source+Code+Pro:wght@400;700;800&display=swap');
+
+body {
+    font-family: 'Kufam', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    background-color: #464031;
+    color: #EAe5D6;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 0.90em;
+}
+
+.footer-img {
+    background-image: url("../images/footer1.jpg");
+    height: 25vh;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+footer {
+    width: 100%;
+    background-color: #464031;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    -webkit-box-shadow: inset 0px 50px 70px -80px rgba(234, 229, 214, 1);
+    -moz-box-shadow: inset 0px 50px 70px -80px rgba(234, 229, 214, 1);
+    box-shadow: inset 0px 50px 70px -80px rgba(234, 229, 214, 1);
+}
+
+.footer-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-title h2 {
+    margin-top: 50px;
+    font-size: 1.1em;
+}
+
+.footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-menu h2 {
+    margin-top: 0px;
+}
+
+.footer-menu ul {
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+}
+
+.footer-contact {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-contact ul {
+    padding: 0;
+}
+
+.footer-contact h2 {
+    margin: 0;
+}
+
+.footer-contact ul span p {
+    padding-top: 20px;
+    margin: 0;
+}
+
+.footer-icon {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icon a {
+    font-size: 1.2em;
+}
+
+.footer-menu ul,
+.footer-contact ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer-menu ul li {
+    margin-top: 20px;
+}
+
+.mosaic-pattern a img {
+    display: none;
+}
+
+#spin {
+    color: #e0cd94;
+}
+
+#spin:after {
+    content: "";
+    animation: spin 4s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        content: "HAVE A DRINK";
+    }
+
+    50% {
+        content: "SHARE A MEAL";
+    }
+
+    100% {
+        content: "SMOKE A SHISHA";
+    }
+
+}
+
+@media only screen and (min-width: 750px) {
+    .footer-img {
+        height: 55vh;
+        background-position: top;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .footer-menu,
+    .footer-contact,
+    .footer-title {
+        width: 30%;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .footer-title h2 {
+        font-size: 1.6em;
+        position: absolute;
+        top: 0px;
+    }
+
+    .mosaic-pattern a img {
+        display: block;
+        margin-top: 90px;
+        width: 350px;
+        margin-left: 130px;
+    }
+
+    .footer-menu ul li a:hover,
+    .footer-contact ul li a:hover,
+    .footer-icon a:hover {
+        color: #eedfb2;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+}
