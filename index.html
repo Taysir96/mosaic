@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div id="invertedcursor"></div>
     <div class="outer-menu">
         <input class="checkbox-toggle" type="checkbox" />
         <div class="hamburger">
@@ -138,6 +139,22 @@
         </div>
 
     </footer>
+    <script>
+        document.body.onmousemove = function (e) {
+            document.documentElement.style.setProperty(
+                '--x', (
+                    e.clientX + window.scrollX
+                ) +
+                'px'
+            );
+            document.documentElement.style.setProperty(
+                '--y', (
+                    e.clientY + window.scrollY
+                ) +
+                'px'
+            );
+        }
+    </script>
 </body>
 
 </html>

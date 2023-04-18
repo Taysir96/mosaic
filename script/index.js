@@ -12,3 +12,17 @@ showSlide(0);
 setInterval(() => {
     showSlide(currentSlide + 1);
 }, 3000);
+document.body.onmousemove = function (e) {
+    document.documentElement.style.setProperty(
+        '--x', (
+            e.clientX + window.scrollX
+        )
+    + 'px'
+    );
+    document.documentElement.style.setProperty(
+        '--y', (
+            e.clientY + window.scrollY
+        )
+    + 'px'
+    );
+}
