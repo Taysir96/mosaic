@@ -60,6 +60,7 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
+    z-index: 3;
 }
 
 .footer-menu h2 {
@@ -75,6 +76,7 @@ footer {
 .footer-contact {
     width: 100%;
     text-align: center;
+    z-index: 3;
 }
 
 .footer-contact ul {
@@ -96,6 +98,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
+    z-index: 3;
 }
 
 .footer-icon a {
@@ -114,6 +117,7 @@ footer {
 
 .mosaic-pattern a img {
     display: none;
+    z-index: 3;
 }
 
 #spin {
@@ -156,6 +160,7 @@ footer {
 
     footer {
         position: relative;
+
     }
 
     .footer-title h2 {
