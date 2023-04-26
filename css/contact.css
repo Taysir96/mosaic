@@ -1,0 +1,163 @@
+@import url("./hamburgerMenu.css");
+@import url("./index.css");
+
+.contact-container {
+    height: 105vh;
+    width: 100%;
+}
+
+.contact-form {
+    width: 95%;
+    margin: auto;
+    border: 3px solid #EAE5D6;
+    border-top: 0px;
+}
+
+.contact-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+}
+
+.contact-logo-menu {
+    flex: 1;
+    margin-top: 10px;
+    margin-left: -30px;
+}
+
+.contact-logo-menu a img {
+    width: 200px;
+}
+
+.contact-form form {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px 0px;
+}
+
+.contact-form form input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #eedfb2;
+    padding: 20px 0px;
+    color: #e2d19d92;
+    font-size: 0.90em;
+    z-index: 5;
+
+}
+
+.contact-form form button {
+    background-color: #a29062;
+    color: #EAE5D6;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    border: 0;
+}
+
+.contact-form form input::placeholder {
+    color: #e2d19d92;
+}
+
+.contact-form form input[type="date"]::-webkit-calendar-picker-indicator,
+.contact-form form input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert();
+
+}
+
+.contact-form video {
+    display: none;
+}
+
+@media only screen and (min-width: 750px) {
+
+    .contact-logo-menu,
+    .contact-menu {
+        display: none;
+    }
+
+    .footer-img {
+        height: 55vh;
+        background-position: top;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .footer-menu,
+    .footer-contact,
+    .footer-title {
+        width: 30%;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .footer-title h2 {
+        font-size: 1.6em;
+        position: absolute;
+        top: 0px;
+    }
+
+    .mosaic-pattern a img {
+        display: block;
+        margin-top: 90px;
+        width: 350px;
+        margin-left: 130px;
+    }
+
+    .footer-menu ul li a:hover,
+    .footer-contact ul li a:hover,
+    .footer-icon a:hover {
+        color: #eedfb2;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+
+    #invertedcursor {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.251);
+        border: 3px solid #EAe5D6;
+        border-radius: 50%;
+        top: var(--y, 0);
+        left: var(--x, 0);
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        mix-blend-mode: difference;
+        transition: transform .2s;
+    }
+
+    .contact-form {
+        position: absolute;
+        width: 65%;
+        top: 13%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+        border: 2px solid #EAE5D6;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .contact-form form {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact-form video {
+        display: block;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 40%;
+        height: 80vh;
+    }
+}

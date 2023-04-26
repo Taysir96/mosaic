@@ -48,6 +48,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    z-index: 5;
 }
 
 .footer-title h2 {
@@ -160,7 +161,6 @@ footer {
 
     footer {
         position: relative;
-
     }
 
     .footer-title h2 {
