@@ -2,8 +2,24 @@
 @import url("./index.css");
 
 .contact-container {
-    height: 105vh;
     width: 100%;
+    padding: 30px 0;
+}
+
+.contact-container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contact-adres {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-adres iframe {
+    width: 90%;
+    height: 250px;
 }
 
 .contact-form {
@@ -35,8 +51,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 30px;
-    padding: 20px 0px;
+    padding-bottom: 30px;
 }
 
 .contact-form form input {
@@ -73,6 +88,7 @@
     display: none;
 }
 
+/* ------------------------------------------------- */
 @media only screen and (min-width: 750px) {
 
     .contact-logo-menu,
@@ -134,11 +150,8 @@
     }
 
     .contact-form {
-        position: absolute;
         width: 65%;
-        top: 13%;
-        left: 50%;
-        transform: translateX(-50%);
+        margin-top: 75px;
         z-index: 5;
         border: 2px solid #EAE5D6;
         display: flex;
@@ -157,7 +170,20 @@
         top: 0;
         left: 0;
         object-fit: cover;
-        width: 40%;
-        height: 80vh;
+        width: 45%;
+        height: 90vh;
+    }
+
+    .contact-adres {
+        width: 67.2%;
+        margin: auto;
+        margin-top: 50px;
+        z-index: 5;
+    }
+
+    .contact-adres iframe {
+        width: 100%;
+        height: 50vh;
+        z-index: 5;
     }
 }
