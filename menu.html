@@ -190,19 +190,19 @@
     <script src="./script/index.js" type="module">
     </script>
     <script>
-        var images = ["../images/menu-card.jpg", "../images/menu-card2.jpg"];
+        var images = ["menu-card.jpg", "menu-card2.jpg"];
         var currentIndex = 0;
         var slideshow = document.getElementById('banner-menu');
 
         function slideImage() {
-            slideshow.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+            slideshow.style.backgroundImage = `url(../images/${images[currentIndex]})`;
             currentIndex++;
             if (currentIndex >= images.length) {
                 currentIndex = 0;
             }
         }
 
-        setInterval(slideImage, 4000);
+        setInterval(slideImage, 3000);
     </script>
 </body>
 
