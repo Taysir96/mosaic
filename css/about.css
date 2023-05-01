@@ -1,0 +1,16 @@
+@import url("./hamburgerMenu.css");
+@import url("./index.css");
+
+.container-about {
+    width: 100%;
+    height: 80vh;
+}
+
+#slideshow {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    z-index: 20;
+}

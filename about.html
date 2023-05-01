@@ -6,41 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/3a750d1e29.js" crossorigin="anonymous"></script>
-    <title>Home | MOSAIC</title>
+    <title>Ove ons | MOSAIC</title>
 </head>
 
 <body>
     <div id="invertedcursor"></div>
-    <div class="outer-menu">
-        <input class="checkbox-toggle" type="checkbox" />
-        <div class="hamburger">
-            <div></div>
-        </div>
-        <div class="menu">
-            <div>
+    <div class="contact-menu">
+        <div class="outer-menu">
+            <input class="checkbox-toggle" type="checkbox" />
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
                 <div>
-                    <ul>
-                        <a href="index.html"><img src="images/logo1.png" alt="logo" width="250px"></a>
-                        <li><a href="index.html" id="currentPage">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="https://www.takeaway.com/be/menu/mosaic" target="_blank">Bestellen</a></li>
-                        <li><a href="about.html">over ons</a></li>
-                        <li><a href="contact.html">Reserveer</a></li>
-                        <br>
-                        <a href="https://www.facebook.com/Mosaic.Leuvan" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/mosaic.leuven/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="tel:0032485541211" target="_blank">
-                            <i class="fa-solid fa-phone-volume"></i></a>
-                    </ul>
+                    <div>
+                        <ul>
+                            <a href="index.html"><img src="images/logo1.png" alt="logo" width="250px"></a>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="https://www.takeaway.com/be/menu/mosaic" target="_blank">Bestellen</a></li>
+                            <li><a href="about.html" id="currentPage">over ons</a></li>
+                            <li><a href="contact.html">Reserveer</a></li>
+                            <br>
+                            <a href="https://www.facebook.com/Mosaic.Leuvan" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/mosaic.leuven/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="tel:0032485541211" target="_blank">
+                                <i class="fa-solid fa-phone-volume"></i></a>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- ************** -->
     <div class="main-menu-desktop">
         <div>
@@ -48,10 +51,10 @@
         </div>
         <div class="main-menu">
             <ul>
-                <li><a href="index.html" id="currentPage">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="https://www.takeaway.com/be/menu/mosaic" target="_blank">Bestellen</a></li>
-                <li><a href="about.html">over ons</a></li>
+                <li><a href="about.html" id="currentPage">over ons</a></li>
                 <li><a href="contact.html">Reserveer</a></li>
             </ul>
         </div>
@@ -64,35 +67,16 @@
 
     </div>
     <!-- ************** -->
-    <div class="video-container">
-        <video muted loop autoplay>
-            <source src="./video/video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <!-- ************** -->
-    <div id="container">
-        <div class="home-container">
-            <section class="home-text">
-                <h1>Mosaic</h1>
-                <p>Mosaic is een Syrisch restaurant dat bekend staat om zijn authentieke Syrische gerechten en
-                    gastvrijheid.
-                    Het restaurant biedt een unieke culinaire ervaring door traditionele Syrische smaken en kruiden te
-                    combineren met moderne kooktechnieken.
-                </p>
-                <p>Mosaic is een geweldige keuze voor iedereen die op zoek is naar een heerlijke en authentieke Syrische
-                    eetervaring.</p>
-            </section>
-            <aside>
-                <section class="home-image"><img src="./images/crispy.jpg"></section>
-                <section class="home-image"><img src="./images/KUNAFE.jpg"></section>
-            </aside>
 
+    <div class="container-about">
+        <div id="slideshow">
+            <div id="slideshow"></div>
         </div>
     </div>
 
-    <div class="footer-img">
+    <!-- ************** -->
 
+    <div class="footer-img">
     </div>
     <footer>
         <div class="footer-title">
@@ -104,10 +88,10 @@
         <div class="footer-menu">
             <ul>
                 <h2 style="color:#a78f51">MENU</h2>
-                <li><a href="index.html" id="currentPage">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="https://www.takeaway.com/be/menu/mosaic" target="_blank">Bestellen</a></li>
-                <li><a href="about.html">over ons</a></li>
+                <li><a href="about.html" id="currentPage">over ons</a></li>
                 <li><a href="contact.html">Reserveer</a></li>
             </ul>
         </div>
@@ -154,6 +138,21 @@
                 'px'
             );
         }
+    </script>
+    <script>
+        var images = ["../images/menu-card.jpg", "../images/menu-card2.jpg"];
+        var currentIndex = 0;
+        var slideshow = document.getElementById('slideshow');
+
+        function slideImage() {
+            slideshow.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+            currentIndex++;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+        }
+
+        setInterval(slideImage, 4000);
     </script>
 </body>
 
