@@ -36,6 +36,7 @@
     position: relative;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     transition: background-image 2s ease-in-out;
     background-image: url("../images/about1.jpg");
 }
