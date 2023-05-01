@@ -30,7 +30,7 @@
     height: 50vh;
     overflow: hidden;
     position: relative;
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
     transition: background-image 2s ease-in-out;
