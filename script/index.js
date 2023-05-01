@@ -13,19 +13,7 @@
 //     showSlide(currentSlide + 1);
 // }, 3000);
 
-var images = ["../images/menu-card.jpg", "../images/menu-card2.jpg"];
-var currentIndex = 0;
-var slideshow = document.querySelector('.banner-menu');
 
-function slideImage() {
-    slideshow.style.backgroundImage = 'url(' + images[currentIndex] + ')';
-    currentIndex++;
-    if (currentIndex >= images.length) {
-        currentIndex = 0;
-    }
-}
-
-setInterval(slideImage, 3000);
 
 document.body.onmousemove = function (e) {
     document.documentElement.style.setProperty(
