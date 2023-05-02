@@ -34,9 +34,9 @@
     height: 40vh;
     overflow: hidden;
     position: relative;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     transition: background-image 2s ease-in-out;
     background-image: url("../images/about1.jpg");
 }
